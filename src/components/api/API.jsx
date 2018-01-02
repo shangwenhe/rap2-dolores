@@ -98,7 +98,35 @@ class API extends React.Component {
                   </tbody>
                 </table>
               </li>
-              <li><code>{serve}/app/mock/:repositoryId/:method/:url</code></li>
+              <li>
+                <code>{serve}/app/mock/:repositoryId/:url</code>
+                <table className='table table-bordered mt12'>
+                  <thead>
+                    <tr>
+                      <th width='140'><code>request.type</code></th>
+                      <th>描述</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><code>GET</code></td>
+                      <td>取单个接口GET的响应数据（JSON）</td>
+                    </tr>
+                    <tr>
+                      <td><code>POST</code></td>
+                      <td>取单个接口POST的响应数据（JSON）</td>
+                    </tr>
+                    <tr>
+                      <td><code>PUT</code></td>
+                      <td>取单个接口PUT的响应数据（JSON）</td>
+                    </tr>
+                    <tr>
+                      <td><code>DELETE</code></td>
+                      <td>取单个接口DELETE的响应数据（JSON）</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
             </ul>
           </div>
           <div className='API'>
